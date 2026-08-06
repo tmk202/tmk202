@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ================= SKETCHY EXCALIDRAW ANIMATED ALL-IN-ONE HEADER BANNER ================= -->
-<img src="gears-sketch.svg" width="800" alt="Nguyen Ngoc Tu - Excalidraw Banner" />
+<img src="gears-sketch.svg?v=2" width="800" alt="Nguyen Ngoc Tu - Excalidraw Banner" />
 
 </div>
 
