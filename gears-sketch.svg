@@ -1,0 +1,423 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220" role="img" aria-label="Nguyen Ngoc Tu 4-Seasons Terrains Banner">
+  <defs>
+    <!-- Excalidraw Pencil Roughness Filter -->
+    <filter id="rough-pencil" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.0" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <style>
+    <![CDATA[
+    .card-bg {
+      fill: #0c0d14;
+      rx: 18px;
+    }
+    .border-sketch {
+      stroke: #2e3447;
+      stroke-width: 1.6;
+      fill: none;
+      filter: url(#rough-pencil);
+    }
+    .gear-group {
+      filter: url(#rough-pencil);
+    }
+    .gear-main {
+      stroke: #ffffff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: #141724;
+      fill-opacity: 0.92;
+    }
+    .gear-overlay {
+      stroke: #c8d1dc;
+      stroke-width: 1.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      opacity: 0.75;
+    }
+    .gear-depth {
+      stroke: #414b5c;
+      stroke-width: 1.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      opacity: 0.5;
+    }
+    .gear-accent {
+      stroke: #6c5ce7;
+      stroke-width: 1.5;
+      stroke-dasharray: 5 3;
+      fill: none;
+      opacity: 0.65;
+    }
+    .pitch-line {
+      stroke: #38bdf8;
+      stroke-width: 1;
+      stroke-dasharray: 3 3;
+      fill: none;
+      opacity: 0.3;
+    }
+    .center-dot {
+      fill: #cbd5e1;
+    }
+
+    /* Seamless Gear Animations */
+    .spin-cw {
+      transform-origin: 85px 85px;
+      animation: rotateCW 12s linear infinite;
+    }
+    .spin-ccw {
+      transform-origin: 195px 85px;
+      animation: rotateCCW 12s linear infinite;
+    }
+
+    @keyframes rotateCW {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    @keyframes rotateCCW {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(-540deg); }
+    }
+
+    /* 4 Seasons Terrains Styles */
+    .terrain-spring {
+      stroke: #34d399;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      fill: none;
+      opacity: 0.6;
+      filter: url(#rough-pencil);
+    }
+    .terrain-summer {
+      stroke: #fbbf24;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-dasharray: 8 4;
+      fill: none;
+      opacity: 0.55;
+      filter: url(#rough-pencil);
+    }
+    .terrain-autumn {
+      stroke: #f97316;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      fill: none;
+      opacity: 0.6;
+      filter: url(#rough-pencil);
+    }
+    .terrain-winter {
+      stroke: #60a5fa;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      fill: none;
+      opacity: 0.65;
+      filter: url(#rough-pencil);
+    }
+
+    /* Stickman Walking Motion */
+    .stickman-walker {
+      filter: url(#rough-pencil);
+      animation: walkAcross 24s linear infinite;
+    }
+
+    .stickman-body {
+      animation: bodyBob 0.6s ease-in-out infinite alternate;
+    }
+
+    .stickman-leg1 {
+      transform-origin: 0px -10px;
+      animation: legSwing1 0.6s ease-in-out infinite alternate;
+    }
+    .stickman-leg2 {
+      transform-origin: 0px -10px;
+      animation: legSwing2 0.6s ease-in-out infinite alternate;
+    }
+    .stickman-arm1 {
+      transform-origin: 0px -20px;
+      animation: armSwing1 0.6s ease-in-out infinite alternate;
+    }
+    .stickman-arm2 {
+      transform-origin: 0px -20px;
+      animation: armSwing2 0.6s ease-in-out infinite alternate;
+    }
+
+    @keyframes walkAcross {
+      0%   { transform: translate(-40px, 192px); }
+      100% { transform: translate(830px, 192px); }
+    }
+    @keyframes bodyBob {
+      0%   { transform: translateY(0px); }
+      100% { transform: translateY(-2.5px); }
+    }
+    @keyframes legSwing1 {
+      0%   { transform: rotate(-28deg); }
+      100% { transform: rotate(28deg); }
+    }
+    @keyframes legSwing2 {
+      0%   { transform: rotate(28deg); }
+      100% { transform: rotate(-28deg); }
+    }
+    @keyframes armSwing1 {
+      0%   { transform: rotate(22deg); }
+      100% { transform: rotate(-22deg); }
+    }
+    @keyframes armSwing2 {
+      0%   { transform: rotate(-22deg); }
+      100% { transform: rotate(22deg); }
+    }
+
+    /* Seasonal Environment Animations */
+    .sun-spin {
+      transform-origin: 280px 42px;
+      animation: spinSun 12s linear infinite;
+    }
+    @keyframes spinSun {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .petal-float {
+      animation: floatPetal 5.5s ease-in-out infinite;
+    }
+    @keyframes floatPetal {
+      0%   { transform: translate(0px, 0px) rotate(0deg); }
+      50%  { transform: translate(18px, 30px) rotate(180deg); }
+      100% { transform: translate(35px, 60px) rotate(360deg); }
+    }
+
+    .leaf-fall {
+      animation: fallLeaf 6.5s ease-in-out infinite;
+    }
+    @keyframes fallLeaf {
+      0%   { transform: translate(0px, -5px) rotate(0deg); }
+      50%  { transform: translate(-22px, 38px) rotate(-120deg); }
+      100% { transform: translate(12px, 75px) rotate(210deg); }
+    }
+
+    .snow-fall {
+      animation: fallSnow 5s linear infinite;
+    }
+    @keyframes fallSnow {
+      0%   { transform: translate(0px, -5px) rotate(0deg); }
+      100% { transform: translate(-15px, 85px) rotate(180deg); }
+    }
+    ]]>
+  </style>
+
+  <!-- Background Card -->
+  <rect class="card-bg" width="800" height="220" />
+  <rect class="border-sketch" x="2" y="2" width="796" height="216" rx="16" />
+
+  <!-- Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <pattern id="grid-header" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" />
+    </pattern>
+    <rect width="800" height="220" fill="url(#grid-header)" />
+  </g>
+
+  <!-- ================= 4 SEASONS 4 TERRAIN PATHS ================= -->
+
+  <!-- TERRAIN 1: SPRING HILL (Green grass hill path with sprouts) -->
+  <g id="spring-terrain-group">
+    <path class="terrain-spring" d="M 10,192 C 50,182 100,186 150,180 C 175,177 190,184 200,188" />
+    <!-- Small hand-drawn grass tufts along Spring hill -->
+    <g stroke="#34d399" stroke-width="1.2" stroke-linecap="round" opacity="0.7" filter="url(#rough-pencil)">
+      <path d="M 60,185 L 57,178 M 60,185 L 63,177 M 60,185 L 61,176" />
+      <path d="M 120,182 L 117,175 M 120,182 L 123,174" />
+      <path d="M 170,180 L 168,172 M 170,180 L 173,173 M 170,180 L 171,171" />
+    </g>
+  </g>
+
+  <!-- TERRAIN 2: SUMMER DUNES (Golden sand dunes & wave ripples) -->
+  <g id="summer-terrain-group">
+    <path class="terrain-summer" d="M 200,188 C 240,196 280,184 320,190 C 350,194 370,186 380,188" />
+    <!-- Sand ripples / gentle dune accent lines -->
+    <g stroke="#fbbf24" stroke-width="1" opacity="0.4" filter="url(#rough-pencil)">
+      <path d="M 230,197 Q 245,193 260,197" />
+      <path d="M 300,192 Q 315,188 330,192" />
+      <path d="M 350,191 Q 362,187 372,190" />
+    </g>
+  </g>
+
+  <!-- TERRAIN 3: AUTUMN GRAVEL ROAD (Amber path lined with pebbles & fallen leaves) -->
+  <g id="autumn-terrain-group">
+    <path class="terrain-autumn" d="M 380,188 C 420,192 460,182 500,190 C 540,194 565,185 580,186" />
+    <!-- Scattered pebbles & small leaf dots on ground -->
+    <g fill="#f97316" stroke="#f97316" stroke-width="0.8" opacity="0.6" filter="url(#rough-pencil)">
+      <circle cx="410" cy="194" r="1.5" />
+      <circle cx="450" cy="188" r="2" />
+      <circle cx="490" cy="193" r="1.5" />
+      <circle cx="530" cy="196" r="2" />
+      <circle cx="560" cy="189" r="1.5" />
+    </g>
+  </g>
+
+  <!-- TERRAIN 4: WINTER SNOW DRIFTS (Ice blue snow mounds & ice crystals) -->
+  <g id="winter-terrain-group">
+    <path class="terrain-winter" d="M 580,186 C 620,182 660,192 700,184 C 740,178 770,190 790,192" />
+    <!-- Soft snow mound accent lines -->
+    <g stroke="#93c5fd" stroke-width="1.2" opacity="0.5" filter="url(#rough-pencil)">
+      <path d="M 600,188 Q 615,184 630,188" />
+      <path d="M 670,193 Q 685,189 700,193" />
+      <path d="M 740,184 Q 755,180 770,184" />
+    </g>
+  </g>
+
+  <!-- ================= 4 SEASONS VISUAL ENVIRONMENT EFFECTS ================= -->
+
+  <!-- 🌸 SPRING: Floating Blossoms -->
+  <g id="spring-zone" filter="url(#rough-pencil)">
+    <g fill="#f472b6" opacity="0.75">
+      <g transform="translate(45, 115)"><path class="petal-float" d="M 0,-6 C 4,-4 5,2 0,7 C -5,2 -4,-4 0,-6 Z" transform="scale(0.85)" style="animation-delay: 0s;" /></g>
+      <g transform="translate(105, 105)"><path class="petal-float" d="M 0,-6 C 4,-4 5,2 0,7 C -5,2 -4,-4 0,-6 Z" transform="scale(1.05)" style="animation-delay: -2s;" /></g>
+      <g transform="translate(165, 120)"><path class="petal-float" d="M 0,-6 C 4,-4 5,2 0,7 C -5,2 -4,-4 0,-6 Z" transform="scale(0.75)" style="animation-delay: -3.5s;" /></g>
+    </g>
+  </g>
+
+  <!-- ☀️ SUMMER: Sun with Rays -->
+  <g id="summer-zone">
+    <g class="sun-spin" filter="url(#rough-pencil)" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="280" cy="42" r="11" fill="#141724" />
+      <line x1="280" y1="24" x2="280" y2="17" />
+      <line x1="280" y1="60" x2="280" y2="67" />
+      <line x1="262" y1="42" x2="255" y2="42" />
+      <line x1="298" y1="42" x2="305" y2="42" />
+      <line x1="267" y1="29" x2="262" y2="24" />
+      <line x1="293" y1="55" x2="298" y2="60" />
+      <line x1="267" y1="55" x2="262" y2="60" />
+      <line x1="293" y1="29" x2="298" y2="24" />
+    </g>
+
+    <g stroke="#fbbf24" stroke-width="0.8" opacity="0.18" stroke-dasharray="6 4">
+      <line x1="280" y1="42" x2="200" y2="192" />
+      <line x1="280" y1="42" x2="270" y2="192" />
+      <line x1="280" y1="42" x2="340" y2="192" />
+    </g>
+  </g>
+
+  <!-- 🍁 AUTUMN: Falling Leaves -->
+  <g id="autumn-zone" filter="url(#rough-pencil)">
+    <g fill="#f97316" opacity="0.8">
+      <g transform="translate(480, 105)"><path class="leaf-fall" d="M 0,-7 C 3,-3 6,-2 3,2 C 1,4 0,7 0,7 C 0,7 -1,4 -3,2 C -6,-2 -3,-3 0,-7 Z" transform="scale(0.95)" style="animation-delay: 0s;" /></g>
+      <g transform="translate(550, 115)"><path class="leaf-fall" d="M 0,-7 C 3,-3 6,-2 3,2 C 1,4 0,7 0,7 C 0,7 -1,4 -3,2 C -6,-2 -3,-3 0,-7 Z" transform="scale(1.15)" style="animation-delay: -2.2s;" /></g>
+      <g transform="translate(620, 110)"><path class="leaf-fall" d="M 0,-7 C 3,-3 6,-2 3,2 C 1,4 0,7 0,7 C 0,7 -1,4 -3,2 C -6,-2 -3,-3 0,-7 Z" transform="scale(0.85)" style="animation-delay: -4.1s;" /></g>
+    </g>
+  </g>
+
+  <!-- ❄️ WINTER: Falling Snowflakes -->
+  <g id="winter-zone" filter="url(#rough-pencil)">
+    <g stroke="#93c5fd" stroke-width="1.3" stroke-linecap="round" opacity="0.85">
+      <g transform="translate(670, 105)"><path class="snow-fall" d="M 0,-5 L 0,5 M -4.3,-2.5 L 4.3,2.5 M -4.3,2.5 L 4.3,-2.5" style="animation-delay: 0s;" /></g>
+      <g transform="translate(725, 115)"><path class="snow-fall" d="M 0,-5 L 0,5 M -4.3,-2.5 L 4.3,2.5 M -4.3,2.5 L 4.3,-2.5" style="animation-delay: -1.5s;" /></g>
+      <g transform="translate(775, 105)"><path class="snow-fall" d="M 0,-5 L 0,5 M -4.3,-2.5 L 4.3,2.5 M -4.3,2.5 L 4.3,-2.5" style="animation-delay: -3.2s;" /></g>
+    </g>
+  </g>
+
+  <!-- STICKMAN BACKPACK WALKER -->
+  <g class="stickman-walker" opacity="0.65">
+    <g class="stickman-body" stroke="#94a3b8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Backpack -->
+      <rect x="-9" y="-25" width="8" height="12" rx="3" fill="#1e2333" stroke="#818cf8" stroke-width="1.6" />
+      <path d="M -3 -22 L 0 -21 M -3 -15 L 0 -16" stroke="#818cf8" stroke-width="1.3" />
+
+      <!-- Head -->
+      <circle cx="0" cy="-30" r="5" fill="#141724" stroke="#e2e8f0" stroke-width="1.9" />
+
+      <!-- Torso -->
+      <line x1="0" y1="-25" x2="0" y2="-10" stroke="#e2e8f0" />
+
+      <!-- Back Arm -->
+      <g class="stickman-arm2">
+        <line x1="0" y1="-22" x2="-7" y2="-12" stroke="#94a3b8" />
+      </g>
+
+      <!-- Back Leg -->
+      <g class="stickman-leg2">
+        <line x1="0" y1="-10" x2="-5" y2="0" stroke="#94a3b8" />
+      </g>
+
+      <!-- Front Leg -->
+      <g class="stickman-leg1">
+        <line x1="0" y1="-10" x2="5" y2="0" stroke="#e2e8f0" />
+      </g>
+
+      <!-- Front Arm -->
+      <g class="stickman-arm1">
+        <line x1="0" y1="-22" x2="6" y2="-13" stroke="#e2e8f0" />
+      </g>
+    </g>
+  </g>
+
+  <!-- SKETCHY GEARS (Left side) -->
+  <g class="gear-group">
+    <circle class="pitch-line" cx="85" cy="85" r="69.6" />
+    <circle class="pitch-line" cx="195" cy="85" r="46.4" />
+  </g>
+
+  <!-- Gear 1 (Clockwise) -->
+  <g class="spin-cw gear-group">
+    <g transform="translate(85, 85)">
+      <path class="gear-depth" d="M 67.09,-5.66 L 77.03,-1.48 L 77.03,7.08 L 67.09,11.26 L 62.71,27.61 L 69.23,36.21 L 64.95,43.62 L 54.24,42.27 L 42.27,54.24 L 43.62,64.95 L 36.21,69.23 L 27.61,62.71 L 11.26,67.09 L 7.08,77.03 L -1.48,77.03 L -5.66,67.09 L -22.01,62.71 L -30.61,69.23 L -38.02,64.95 L -36.67,54.24 L -48.64,42.27 L -59.35,43.62 L -63.63,36.21 L -57.11,27.61 L -61.49,11.26 L -71.43,7.08 L -71.43,-1.48 L -61.49,-5.66 L -57.11,-22.01 L -63.63,-30.61 L -59.35,-38.02 L -48.64,-36.67 L -36.67,-48.64 L -38.02,-59.35 L -30.61,-63.63 L -22.01,-57.11 L -5.66,-61.49 L -1.48,-71.43 L 7.08,-71.43 L 11.26,-61.49 L 27.61,-57.11 L 36.21,-63.63 L 43.62,-59.35 L 42.27,-48.64 L 54.24,-36.67 L 64.95,-38.02 L 69.23,-30.61 L 62.71,-22.01 Z" />
+      <path class="gear-main" d="M 64.29,-8.46 L 74.23,-4.28 L 74.23,4.28 L 64.29,8.46 L 59.91,24.81 L 66.43,33.41 L 62.15,40.82 L 51.44,39.47 L 39.47,51.44 L 40.82,62.15 L 33.41,66.43 L 24.81,59.91 L 8.46,64.29 L 4.28,74.23 L -4.28,74.23 L -8.46,64.29 L -24.81,59.91 L -33.41,66.43 L -40.82,62.15 L -39.47,51.44 L -51.44,39.47 L -62.15,40.82 L -66.43,33.41 L -59.91,24.81 L -64.29,8.46 L -74.23,4.28 L -74.23,-4.28 L -64.29,-8.46 L -59.91,-24.81 L -66.43,-33.41 L -62.15,-40.82 L -51.44,-39.47 L -39.47,-51.44 L -40.82,-62.15 L -33.41,-66.43 L -24.81,-59.91 L -8.46,-64.29 L -4.28,-74.23 L 4.28,-74.23 L 8.46,-64.29 L 24.81,-59.91 L 33.41,-66.43 L 40.82,-62.15 L 39.47,-51.44 L 51.44,-39.47 L 62.15,-40.82 L 66.43,-33.41 L 59.91,-24.81 Z M 17.00,0 A 17.00 17.00 0 1 0 -17.00,0 A 17.00 17.00 0 1 0 17.00,0 Z M 47.53,10.59 A 8.00 8.00 0 1 0 31.53,10.59 A 8.00 8.00 0 1 0 47.53,10.59 Z M -2.59,39.53 A 8.00 8.00 0 1 0 -18.59,39.53 A 8.00 8.00 0 1 0 -2.59,39.53 Z M -31.53,-10.59 A 8.00 8.00 0 1 0 -47.53,-10.59 A 8.00 8.00 0 1 0 -31.53,-10.59 Z M 18.59,-39.53 A 8.00 8.00 0 1 0 2.59,-39.53 A 8.00 8.00 0 1 0 18.59,-39.53 Z" fill-rule="evenodd" />
+      <path class="gear-overlay" d="M 64.62,-9.60 L 73.69,-4.94 L 74.80,4.70 L 65.23,7.47 L 59.72,23.69 L 65.75,33.42 L 61.01,40.10 L 51.80,39.58 L 38.80,51.66 L 41.57,60.96 L 34.14,66.90 L 24.43,59.08 L 9.56,63.90 L 3.30,73.26 L -3.45,74.48 L -7.73,64.84 L -24.73,61.04 L -33.70,66.55 L -40.03,62.43 L -38.61,51.63 L -50.95,38.38 L -62.80,40.32 L -67.44,32.77 L -60.87,24.28 L -63.96,8.14 L -74.54,3.58 L -74.79,-3.23 L -63.93,-8.20 L -60.70,-24.26 L -67.24,-33.70 L -60.97,-40.49 L -51.31,-39.03 L -38.65,-50.78 L -41.47,-63.27 L -33.85,-66.98 L -25.51,-58.85 L -7.56,-64.73 L -3.91,-74.48 L 5.28,-74.33 L 7.90,-64.90 L 24.96,-60.48 L 33.61,-65.47 L 40.58,-62.82 L 40.67,-51.42 L 50.46,-40.56 L 61.21,-40.52 L 67.13,-33.60 L 58.86,-25.10 Z" />
+      <circle class="gear-accent" cx="0" cy="0" r="45.2" />
+      <circle class="center-dot" cx="0" cy="0" r="3.5" />
+    </g>
+  </g>
+
+  <!-- Gear 2 (Counter-Clockwise) -->
+  <g class="spin-ccw gear-group">
+    <g transform="translate(195, 85)">
+      <path class="gear-depth" d="M -32.13,25.64 L -42.90,26.08 L -46.27,17.93 L -38.34,10.62 L -38.34,-5.62 L -46.27,-12.93 L -42.90,-21.08 L -32.13,-20.64 L -20.64,-32.13 L -21.08,-42.90 L -12.93,-46.27 L -5.62,-38.34 L 10.62,-38.34 L 17.93,-46.27 L 26.08,-42.90 L 25.64,-32.13 L 37.13,-20.64 L 47.90,-21.08 L 51.27,-12.93 L 43.34,-5.62 L 43.34,10.62 L 51.27,17.93 L 47.90,26.08 L 37.13,25.64 L 25.64,37.13 L 26.08,47.90 L 17.93,51.27 L 10.62,43.34 L -5.62,43.34 L -12.93,51.27 L -21.08,47.90 L -20.64,37.13 Z" />
+      <path class="gear-main" d="M -34.63,23.14 L -45.40,23.58 L -48.77,15.43 L -40.84,8.12 L -40.84,-8.12 L -48.77,-15.43 L -45.40,-23.58 L -34.63,-23.14 L -23.14,-34.63 L -23.58,-45.40 L -15.43,-48.77 L -8.12,-40.84 L 8.12,-40.84 L 15.43,-48.77 L 23.58,-45.40 L 23.14,-34.63 L 34.63,-23.14 L 45.40,-23.58 L 48.77,-15.43 L 40.84,-8.12 L 40.84,8.12 L 48.77,15.43 L 45.40,23.58 L 34.63,23.14 L 23.14,34.63 L 23.58,45.40 L 15.43,48.77 L 8.12,40.84 L -8.12,40.84 L -15.43,48.77 L -23.58,45.40 L -23.14,34.63 Z M 12.00,0 A 12.00 12.00 0 1 0 -12.00,0 A 12.00 12.00 0 1 0 12.00,0 Z M 31.41,6.94 A 5.50 5.50 0 1 0 20.41,6.94 A 5.50 5.50 0 1 0 31.41,6.94 Z M -1.44,25.91 A 5.50 5.50 0 1 0 -12.44,25.91 A 5.50 5.50 0 1 0 -1.44,25.91 Z M -20.41,-6.94 A 5.50 5.50 0 1 0 -31.41,-6.94 A 5.50 5.50 0 1 0 -20.41,-6.94 Z M 12.44,-25.91 A 5.50 5.50 0 1 0 1.44,-25.91 A 5.50 5.50 0 1 0 12.44,-25.91 Z" fill-rule="evenodd" />
+      <path class="gear-overlay" d="M -34.87,22.39 L -44.43,23.88 L -48.71,15.90 L -40.00,8.57 L -41.72,-6.94 L -49.68,-16.29 L -46.18,-23.80 L -34.22,-24.00 L -23.94,-34.71 L -22.71,-46.45 L -14.46,-49.38 L -7.21,-41.52 L 9.13,-39.67 L 16.57,-48.42 L 24.67,-44.72 L 22.00,-34.63 L 34.33,-23.41 L 45.40,-23.60 L 48.49,-16.29 L 40.67,-8.58 L 41.69,6.97 L 47.89,15.56 L 44.40,23.07 L 35.12,24.28 L 22.81,33.48 L 23.50,45.06 L 15.01,49.07 L 7.86,40.48 L -7.68,40.89 L -15.25,48.38 L -23.64,45.71 L -22.03,35.34 Z" />
+      <circle class="gear-accent" cx="0" cy="0" r="28.8" />
+      <circle class="center-dot" cx="0" cy="0" r="3" />
+    </g>
+  </g>
+
+  <!-- HEADER TEXT CONTENT -->
+  <!-- Name -->
+  <text x="535" y="48" text-anchor="middle" font-family="'Courier New', monospace" font-size="25" font-weight="800" fill="#ffffff" letter-spacing="2">🧑‍💻 NGUYEN NGOC TU</text>
+
+  <!-- Subtitle -->
+  <text x="535" y="78" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" font-weight="700" fill="#38bdf8" letter-spacing="1">Software Engineer · AI Developer</text>
+
+  <!-- Rotating Role Text -->
+  <g font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#a855f7">
+    <!-- Role 1: 0s to 4s -->
+    <text x="535" y="118" text-anchor="middle">
+      <tspan>AI Automation</tspan>
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="16s" repeatCount="indefinite"/>
+    </text>
+    <!-- Role 2: 4s to 8s -->
+    <text x="535" y="118" text-anchor="middle">
+      <tspan>Full-Stack Development</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.29;0.46;0.50;1" dur="16s" repeatCount="indefinite"/>
+    </text>
+    <!-- Role 3: 8s to 12s -->
+    <text x="535" y="118" text-anchor="middle">
+      <tspan>System Architecture</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.50;0.54;0.71;0.75;1" dur="16s" repeatCount="indefinite"/>
+    </text>
+    <!-- Role 4: 12s to 16s -->
+    <text x="535" y="118" text-anchor="middle">
+      <tspan>3D Creative Development</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.75;0.79;0.96;1.0;1" dur="16s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Blinking Cursor -->
+    <text x="675" y="118" fill="#a855f7">
+      <tspan>▍</tspan>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.55;1" dur="1s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Quote Tagline -->
+  <text x="535" y="152" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#94a3b8" letter-spacing="0.5">“ I don't just learn, I build to solve. ”</text>
+</svg>
