@@ -7,9 +7,7 @@
 
 ---
 
-## Automation Mindset
-
-> **"In the AI era, syntax is cheap. Engineering mindset and system architecture are everything."**
+> **"If it has to be done twice, it should be automated."**
 > 
 > I design autonomous, resilient systems that eliminate manual overhead and solve complex infrastructure challenges.
 
