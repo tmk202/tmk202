@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220" role="img" aria-label="Nguyen Ngoc Tu 4-Seasons Terrains Banner">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 220" width="800" height="220" role="img" aria-label="Nguyen Ngoc Tu Portfolio Banner">
   <defs>
     <!-- Excalidraw Pencil Roughness Filter -->
     <filter id="rough-pencil" x="-10%" y="-10%" width="120%" height="120%">
@@ -220,12 +220,16 @@
     <rect width="800" height="220" fill="url(#grid-header)" />
   </g>
 
+  <!-- TOP-RIGHT PROFILE VISIT COUNTER PIXEL BADGE -->
+  <g transform="translate(660, 16)">
+    <image href="https://komarev.com/ghpvc/?username=tmk202&amp;color=6c5ce7&amp;style=flat-square&amp;label=VISITS" width="120" height="20" />
+  </g>
+
   <!-- ================= 4 SEASONS 4 TERRAIN PATHS ================= -->
 
-  <!-- TERRAIN 1: SPRING HILL (Green grass hill path with sprouts) -->
+  <!-- TERRAIN 1: SPRING HILL -->
   <g id="spring-terrain-group">
     <path class="terrain-spring" d="M 10,192 C 50,182 100,186 150,180 C 175,177 190,184 200,188" />
-    <!-- Small hand-drawn grass tufts along Spring hill -->
     <g stroke="#34d399" stroke-width="1.2" stroke-linecap="round" opacity="0.7" filter="url(#rough-pencil)">
       <path d="M 60,185 L 57,178 M 60,185 L 63,177 M 60,185 L 61,176" />
       <path d="M 120,182 L 117,175 M 120,182 L 123,174" />
@@ -233,10 +237,9 @@
     </g>
   </g>
 
-  <!-- TERRAIN 2: SUMMER DUNES (Golden sand dunes & wave ripples) -->
+  <!-- TERRAIN 2: SUMMER DUNES -->
   <g id="summer-terrain-group">
     <path class="terrain-summer" d="M 200,188 C 240,196 280,184 320,190 C 350,194 370,186 380,188" />
-    <!-- Sand ripples / gentle dune accent lines -->
     <g stroke="#fbbf24" stroke-width="1" opacity="0.4" filter="url(#rough-pencil)">
       <path d="M 230,197 Q 245,193 260,197" />
       <path d="M 300,192 Q 315,188 330,192" />
@@ -244,10 +247,9 @@
     </g>
   </g>
 
-  <!-- TERRAIN 3: AUTUMN GRAVEL ROAD (Amber path lined with pebbles & fallen leaves) -->
+  <!-- TERRAIN 3: AUTUMN GRAVEL ROAD -->
   <g id="autumn-terrain-group">
     <path class="terrain-autumn" d="M 380,188 C 420,192 460,182 500,190 C 540,194 565,185 580,186" />
-    <!-- Scattered pebbles & small leaf dots on ground -->
     <g fill="#f97316" stroke="#f97316" stroke-width="0.8" opacity="0.6" filter="url(#rough-pencil)">
       <circle cx="410" cy="194" r="1.5" />
       <circle cx="450" cy="188" r="2" />
@@ -257,10 +259,9 @@
     </g>
   </g>
 
-  <!-- TERRAIN 4: WINTER SNOW DRIFTS (Ice blue snow mounds & ice crystals) -->
+  <!-- TERRAIN 4: WINTER SNOW DRIFTS -->
   <g id="winter-terrain-group">
     <path class="terrain-winter" d="M 580,186 C 620,182 660,192 700,184 C 740,178 770,190 790,192" />
-    <!-- Soft snow mound accent lines -->
     <g stroke="#93c5fd" stroke-width="1.2" opacity="0.5" filter="url(#rough-pencil)">
       <path d="M 600,188 Q 615,184 630,188" />
       <path d="M 670,193 Q 685,189 700,193" />

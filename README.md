@@ -37,6 +37,7 @@
   <a href="https://www.linkedin.com/in/nguyen-tu-17599929a/"><img src="https://img.shields.io/badge/LinkedIn-Nguyen%20Ngoc%20Tu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://github.com/tmk202"><img src="https://img.shields.io/badge/GitHub-%40tmk202-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
   <a href="https://nntisme.vercel.app"><img src="https://img.shields.io/badge/Portfolio-NNTisme-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+  <img src="https://komarev.com/ghpvc/?username=tmk202&color=6c5ce7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views">
 </p>
 
 <div align="center">
