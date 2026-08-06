@@ -15,21 +15,6 @@
 
 ---
 
-## Engineering Focus
-
-- **Autonomous AI & Multi-Agent Loops**: Designing self-healing agent orchestration, tool-calling workflows, and RAG pipelines.
-- **Adaptive Extraction & Anti-Bot Bypassing**: Building resilient crawling architectures capable of evading modern anti-bot defenses.
-- **Event-Driven & Real-Time Streaming**: Engineering high-concurrency microservices, message queues, and low-latency pipelines.
-- **Programmatic Content Infrastructure**: Automating end-to-end media rendering, processing, and distribution.
-
----
-
-## Core Weapons
-
-`Python` · `TypeScript` · `LLM Orchestration` · `RAG` · `Playwright` · `FastAPI` · `Redis` · `Docker` · `Supabase`
-
----
-
 ## Connect With Me
 
 <p align="center">
