@@ -7,31 +7,26 @@
 
 ---
 
-## ⚡ Automation Core Focus
+## ⚡ Automation Mindset
 
-> **"If it has to be done twice, it should be automated."**
+> **"In the AI era, syntax is cheap. Engineering mindset and system architecture are everything."**
 > 
-> Software Engineer with an obsessive focus on **AI Automation**, **Autonomous Workflows**, and **System Architecture**. From web scraping anti-bot bypasses to LLM agent orchestration, I build systems that run seamlessly without human intervention.
+> I design autonomous, resilient systems that eliminate manual overhead and solve complex infrastructure challenges.
 
 ---
 
-## ⚙️ Areas of Interest & Expertise
+## ⚙️ Engineering Focus
 
-- 🤖 **Autonomous AI Agents & RAG**: Building multi-agent workflows, tool-calling loops, and high-accuracy vector retrieval pipelines (OpenAI / Gemini / n8n / MCP).
-- 🕷️ **Advanced Web Extraction & Anti-Bot Bypassing**: Session cookie auto-rotation, residential proxy orchestration, and headless browser automation (Playwright / Camoufox / DCOM).
-- 🔄 **Real-Time Data Pipelines & Microservices**: Event-driven architectures, queue processing, and high-throughput real-time streaming (FastAPI / Redis Pub-Sub / WebRTC / Docker).
-- 🎬 **Programmatic Media & Content Pipelines**: Autonomous video/image generation, browser-based rendering, and automated multi-channel publishing (Remotion / MoviePy / FFmpeg).
+- 🤖 **Autonomous AI & Multi-Agent Loops**: Designing self-healing agent orchestration, tool-calling workflows, and RAG pipelines.
+- 🕷️ **Adaptive Extraction & Anti-Bot Bypassing**: Building resilient crawling architectures capable of evading modern anti-bot defenses.
+- 🔄 **Event-Driven & Real-Time Streaming**: Engineering high-concurrency microservices, message queues, and low-latency pipelines.
+- 🎬 **Programmatic Content Infrastructure**: Automating end-to-end media rendering, processing, and distribution.
 
 ---
 
-## 🛠️ Automation Tech Stack
+## 🛠️ Core Weapons
 
-| Domain | Focus & Tools |
-| :--- | :--- |
-| **Languages & Core** | `Python` `TypeScript` `JavaScript` `Node.js` `Asyncio` `SQL` |
-| **AI & Automation** | `LLM Orchestration` `Autonomous RAG` `n8n` `Playwright` `Camoufox` `Vector DBs` |
-| **Backend & Messaging** | `FastAPI` `Express` `Redis Pub/Sub` `Socket.IO` `Mediasoup` `PostgreSQL` |
-| **DevOps & Proxies** | `Docker` `Anti-bot Bypass` `DCOM/Proxy Box Rotation` `Linux` `PM2` `Supabase` |
+`Python` · `TypeScript` · `LLM Orchestration` · `RAG` · `Playwright` · `FastAPI` · `Redis` · `Docker` · `Supabase`
 
 ---
 
